@@ -116,10 +116,18 @@ const AÑO = new Date().getFullYear();
           </div>
 
         </div>
+
+        <!-- Firma -->
+        <div class="firma-preview">
+          <firma-stian logo="/logo-claro.png"></firma-stian>
+        </div>
+
       </div>
     </div>
   </footer>
 </div>
+
+<script src="/firma-stian/firma-stian.js" is:inline></script>
 
 <style>
   /* Wrapper para que el footer quede al final del flujo normal */
@@ -268,6 +276,15 @@ const AÑO = new Date().getFullYear();
   .footer-legal a { font-size:12px;color:var(--gris-sub);text-decoration:none;transition:color .2s; }
   .footer-legal a:hover { color:var(--texto); }
   .footer-legal-sep { color:var(--gris-sub);font-size:12px; }
+
+  /* Firma */
+  .firma-preview {
+    grid-column:1 / -1;
+    border-top:1px solid var(--borde);
+    padding-top:16px;margin-top:8px;
+    display:flex;justify-content:center;
+    background:transparent;
+  }
 
   /* ---- Animaciones ---- */
   @keyframes jello-vertical {
